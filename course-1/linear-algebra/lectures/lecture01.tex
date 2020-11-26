@@ -20,7 +20,7 @@ $a_{ij}$ -- элемент на пересечении $i$-й строки и $j
 Множество всех матриц размера $m \times n$ с коэффициентами из $\RR$ (множество всех действительных чисел) --- $\text{Mat}_{n \times m}(\RR)$ или $\text{Mat}_{n \times m}$
 
 \begin{definition}
-    Две матрицы $A \in \text{Mat}_{n \times m}$ и $B \in \text{Mat}_{p \times q}$ называются \textit{равными}, если $m = p$, $n = q$, и соответствующие элементы равны
+    Две матрицы $A \in \text{Mat}_{n \times m}$ и $B \in \text{Mat}_{p \times q}$ называются \textit{равными}, если $n = p$, $m = q$, и соответствующие элементы равны
 \end{definition}
 
 \begin{example}
@@ -178,11 +178,11 @@ $\lambda \in \RR \implies \lambda x_i := (\lambda x_1, \dots, \lambda x_n)$
 
 $A_{(i)} = \begin{pmatrix} a_{i1}, a_{i2}, \dots, a_{in} \end{pmatrix} $ --- $i$-я строка матрицы $A$
 
-$A^{(j)} = \begin{pmatrix} a_{1j} \\ a_{2j} \\ \vdots \\ a_{mn} \end{pmatrix} $ --- $j$-й  столбец матрицы $A$
+$A^{(j)} = \begin{pmatrix} a_{1j} \\ a_{2j} \\ \vdots \\ a_{mj} \end{pmatrix} $ --- $j$-й  столбец матрицы $A$
 
 \begin{enumerate}[label=\arabic*)]
     \item
-        Частный случай: умножение строки на столбец той же длинны
+        Частный случай: умножение строки на столбец той же длины
 
         $\underbrace{(x_1, \dots, x_n)}_{1 \times n}
         \underbrace{\begin{pmatrix}
@@ -207,7 +207,7 @@ $A^{(j)} = \begin{pmatrix} a_{1j} \\ a_{2j} \\ \vdots \\ a_{mn} \end{pmatrix} $ 
 
 \begin{example}
     \( \begin{pmatrix}
-        y_1 \\ \vdots \\ y_n
+        y_1 \\ \vdots \\ y_m
     \end{pmatrix} 
     \begin{pmatrix}
         x_1 & \dots & x_n
@@ -217,7 +217,7 @@ $A^{(j)} = \begin{pmatrix} a_{1j} \\ a_{2j} \\ \vdots \\ a_{mn} \end{pmatrix} $ 
         x_1 y_1 & x_2 y_1 & \dots & x_n y_1 \\
         x_1 y_2 & x_2 y_2 & \dots & x_n y_2 \\
         \vdots & \vdots & \ddots & \vdots \\
-        x_1 y_n & x_2 y_m & \dots & x_n y_m 
+        x_1 y_m & x_2 y_m & \dots & x_n y_m 
     \end{pmatrix} \)
 \end{example}
 
